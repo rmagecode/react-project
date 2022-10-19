@@ -1,9 +1,8 @@
 import React from 'react';
-import Card from './Card';
-
+import Card from './Card.js';
 
 const CardList = ({ robots }) => {
-      return (
+    return (
         <div>
             {
             robots.map((user, i) => {
@@ -13,11 +12,12 @@ const CardList = ({ robots }) => {
                     name={robots[i].name} 
                     email={robots[i].email}/>
                 )
-            })
-        }
+
+             })
+            }
         </div>
-      )
+       
+    )
 }
-    
 
 export default CardList;
