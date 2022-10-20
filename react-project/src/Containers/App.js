@@ -5,6 +5,9 @@ import Scroll from '../Components/Scroll';
 import './App.css';
 
 
+
+
+
 class App extends Component {
     constructor() {
         super()
@@ -32,7 +35,7 @@ class App extends Component {
 
         return (
             <div className='tc'>
-                <h2>RoboFriends</h2>
+                <h2 >RoboFriends</h2>
                 <SearchBox searchChange={this.onSearchChange}/>
                 <Scroll>
                     <CardList robots={filteredRobots}/>
